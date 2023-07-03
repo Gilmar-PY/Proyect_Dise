@@ -9,15 +9,15 @@ while True:
     # Lee una línea de datos del serial y la decodifica
     arduino.readline().decode().rstrip()
       # Actualiza la gráfica
-  x. append(Len(x) 1)
-  y. append (float (dato))
-  ax. clear()
+  x.append(Len(x)+ 1)
+  y.append (float(dato))
+  ax.clear()
   ax.plot(x, y)
-  ax.set xlabel('Tiempo',
-  ax.set_ylabel('Valor de la humedad en %')
+  ax.set_xlabel('Tiempo'),
+  ax.set_ylabel('Valor del sensor turbidez %')
   #Actualiza la imagen en Streamlit
   imagen.pyplot(fig)
-  plt. pause(0. 1)
+  plt.pause(0. 1)
 st.write("hola mundo ")
 
 

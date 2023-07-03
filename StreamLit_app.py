@@ -1,26 +1,24 @@
 import streamlit as st
-import serial
-
-# Reemplace 'COM3' con el puerto correcto que su Arduino está utilizando
-arduino = serial.Serial('COM3', 9600)
-
-def read_from_arduino(arduino):
-    while True:
-        data = arduino.readline().decode('utf-8')
-        if data:
-            return data
-
-def main():
-    st.title("Leyendo datos del Arduino")
-
-    if st.button("Leer datos"):
-        data = read_from_arduino(arduino)
-        st.write(data)
-
-if __name__ == "__main__":
-    main()
-
-import streamlit as st
+# Configuración de la interfaz de Streamlit
+st. title ("Lectura de datos desde Arduino")
+imagen
+st. empty() # Contenedor para mostrar la imagen
+# Lee los datos del serial
+while True:
+if arduino. in _waiting > 0:
+# Lee una línea de datos del serial y la decodifica
+dato
+arduino.readline().decode().rstrip()
+# Actualiza la gráfica
+x. append(Len(x) 1)
+y. append (float (dato))
+ax. clear()
+ax.plot(x, y)
+ax.set xlabel('Tiempo',
+ax.set_ylabel('Valor de la humedad en %')
+• Actualiza la imagen en Streamlit
+imagen.pyplot(fig)
+plt. pause(0. 1)
 st.write("hola mundo ")
 
 
